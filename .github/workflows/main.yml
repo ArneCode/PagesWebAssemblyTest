@@ -37,7 +37,7 @@ jobs:
           git config --local user.name "github-actions"
           git fetch
           git checkout gh-pages
-          cp -r ../wasm wasm/
+          cp -r ../wasm .
           git add wasm/
           git commit -m "${{github.event.head_commit.message}}"
           git push

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(WASM_TEST_1 CXX)
+project(WASM_TEST CXX)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../../../wasm)
 file(GLOB_RECURSE SRC src/*.cpp src/*.hpp)
 add_executable(${PROJECT_NAME} ${SRC})
