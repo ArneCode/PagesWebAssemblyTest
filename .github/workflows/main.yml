@@ -27,4 +27,6 @@ jobs:
       - uses: mymindstorm/setup-emsdk@v11
       
       - name: Configure CMake
-        run: emcmake -B build/wasm
+        run: cmake -B build/wasm
+      - name: Compiling files
+        run: emmake make -C build/wasm
