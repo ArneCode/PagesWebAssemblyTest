@@ -39,8 +39,6 @@ jobs:
           git fetch
           git status
           git add wasm/
-          git stash
-          git checkout gh-pages
       - name: really pushing this time
         run: |
           tree
