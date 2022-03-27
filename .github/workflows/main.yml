@@ -37,6 +37,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
           git fetch
+          git checkout gh-pages
           git add wasm/
           git commit -m "automatic commit"
       - name: really pushing this time
