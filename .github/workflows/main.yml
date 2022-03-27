@@ -32,10 +32,14 @@ jobs:
           emcmake cmake -B build/wasm
       - name: Compiling files
         run: emmake make -C build/wasm
-      - name: pushing to pages
+      - name: commiting files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
           git add .
           git commit -m "automatic commit"
-          git push --repo=pages
+      - name: Pushing to Pages
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: pages
