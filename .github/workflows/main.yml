@@ -43,6 +43,12 @@ jobs:
           tree
           chmod u+x ./push_to_page.sh
           ./push_to_page.sh
+          git stash
+          git checkout gh-pages
+          git status
+          git stash pop
+          git restore --staged .
+          git stash drop
       - name: git adding
         run: |
           git add wasm/
