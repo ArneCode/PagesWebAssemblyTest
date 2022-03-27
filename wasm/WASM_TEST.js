@@ -4788,7 +4788,7 @@ var asm = createWasm();
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__wasm_call_ctors");
 
 /** @type {function(...*):?} */
-var _return100 = Module["_return100"] = createExportWrapper("return100");
+var _returning2 = Module["_returning2"] = createExportWrapper("returning2");
 
 /** @type {function(...*):?} */
 var ___errno_location = Module["___errno_location"] = createExportWrapper("__errno_location");
