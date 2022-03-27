@@ -36,7 +36,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
-          git add .
+          git checkout pages
+          git add wasm/
           git commit -m "automatic commit"
       - name: Pushing to Pages
         run: git push
