@@ -39,9 +39,6 @@ jobs:
           git fetch
           git stash
           git checkout gh-pages
-      - name: really pushing this time
-        run: |
-          git stash pop
       - name: git adding
         run: |
           git add wasm/
