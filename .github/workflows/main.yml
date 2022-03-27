@@ -47,7 +47,7 @@ jobs:
       - name: abac
         run: |
           git stash pop
-          git restore --staged
+          git restore --staged .
       - name: git adding
         run: |
           git add wasm/
