@@ -1839,7 +1839,7 @@ var asm = createWasm();
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__wasm_call_ctors");
 
 /** @type {function(...*):?} */
-var __Z7return2v = Module["__Z7return2v"] = createExportWrapper("_Z7return2v");
+var _return2 = Module["_return2"] = createExportWrapper("return2");
 
 /** @type {function(...*):?} */
 var ___errno_location = Module["___errno_location"] = createExportWrapper("__errno_location");
