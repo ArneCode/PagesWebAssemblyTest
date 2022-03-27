@@ -39,9 +39,9 @@ jobs:
           git fetch
           git stash
           git checkout gh-pages
-          git stash pop
       - name: really pushing this time
         run: |
+          git stash pop
           git add wasm/
           git commit -m "${{github.event.head_commit.message}}"
           git push
