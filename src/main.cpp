@@ -6,4 +6,7 @@ EMSCRIPTEN_KEEPALIVE int next(){
     n++;
     return n;
 }
+EMSCRIPTEN_KEEPALIVE std::string getMsg(){
+    return "Hello World";
+}
 }
