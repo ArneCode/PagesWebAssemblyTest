@@ -24,12 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      #- uses: mymindstorm/setup-emsdk@v11
+      - uses: mymindstorm/setup-emsdk@v11
       
       - name: Configure CMake
         run: |
-          cd ..
-          tree
           emcmake cmake -B build/wasm
       - name: Compiling files
         run: emmake make -C build/wasm
@@ -39,6 +37,7 @@ jobs:
           git config --local user.name "github-actions"
           git fetch
           git checkout gh-pages
+          cp -r ../wasm wasm/
           git add wasm/
           git commit -m "${{github.event.head_commit.message}}"
           git push
