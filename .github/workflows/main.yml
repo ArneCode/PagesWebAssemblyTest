@@ -43,6 +43,7 @@ jobs:
       - name: really pushing this time
         run: |
           git status
+          git add wasm/
           git stash pop
       - name: git adding
         run: |
