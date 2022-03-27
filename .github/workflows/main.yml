@@ -43,6 +43,7 @@ jobs:
           git checkout gh-pages
       - name: really pushing this time
         run: |
+          tree
           ./push_to_page.sh
       - name: git adding
         run: |
