@@ -1,8 +1,8 @@
 #include <emscripten.h>
 #include <iostream>
 extern "C"{
-EMSCRIPTEN_KEEPALIVE int return100(){
-    std::cout<<"inside return100 function";
-    return 100;
+EMSCRIPTEN_KEEPALIVE int returning2(){
+    std::cout<<"inside returning2 function";
+    return 2;
 }
 }
