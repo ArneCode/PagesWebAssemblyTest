@@ -39,7 +39,7 @@ jobs:
           git add .
           git commit -m "automatic commit"
       - name: Pushing to Pages
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: pages
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: pages
