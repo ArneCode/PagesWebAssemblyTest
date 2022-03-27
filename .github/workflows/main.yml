@@ -29,6 +29,6 @@ jobs:
       - name: Configure CMake
         run: |
           tree
-          cmake -B build/wasm
+          emcmake cmake -B build/wasm
       - name: Compiling files
         run: emmake make -C build/wasm
