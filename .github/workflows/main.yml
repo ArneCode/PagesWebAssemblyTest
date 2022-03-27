@@ -41,3 +41,4 @@ jobs:
           git add wasm/
           git commit -m "automatic commit"
           git push
+          
