@@ -39,4 +39,4 @@ jobs:
           git add .
           git commit -m "automatic commit"
       - name: Pushing to Pages
-        run: git push origin pages
+        run: git push
