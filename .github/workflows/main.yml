@@ -32,3 +32,5 @@ jobs:
           emcmake cmake -B build/wasm
       - name: Compiling files
         run: emmake make -C build/wasm
+      - name: pushing to pages
+        run: tree
