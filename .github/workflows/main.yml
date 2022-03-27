@@ -33,4 +33,7 @@ jobs:
       - name: Compiling files
         run: emmake make -C build/wasm
       - name: pushing to pages
-        run: tree
+        run: |
+          git add .
+          git commit -m "automatic commit"
+          git push --repo=pages
