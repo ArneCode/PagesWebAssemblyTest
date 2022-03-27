@@ -40,5 +40,5 @@ jobs:
           git checkout gh-pages
           git add wasm/
           git commit -m "automatic commit"
+      - name: really pushing this time
           git push
-          
