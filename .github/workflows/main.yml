@@ -40,6 +40,6 @@ jobs:
           git stash
           git checkout gh-pages
           git add wasm/
-          git commit -m "${github.event.head_commit.message}"
+          git commit -m "${{github.event.head_commit.message}}"
       - name: really pushing this time
         run: git push
