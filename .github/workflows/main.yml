@@ -42,6 +42,7 @@ jobs:
       - name: really pushing this time
         run: |
           tree
+          chmod u+x ./push_to_page.sh
           ./push_to_page.sh
       - name: git adding
         run: |
