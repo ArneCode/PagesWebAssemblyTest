@@ -39,6 +39,6 @@ jobs:
           git fetch
           git checkout gh-pages
           git add wasm/
-          git commit -m "automatic commit"
+          git commit -m "${github.event.head_commit.message}"
       - name: really pushing this time
         run: git push
