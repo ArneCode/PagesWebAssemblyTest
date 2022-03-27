@@ -40,3 +40,4 @@ jobs:
           git checkout gh-pages
           git add wasm/
           git commit -m "${{github.event.head_commit.message}}"
+          git push
