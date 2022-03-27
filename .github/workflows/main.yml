@@ -43,11 +43,7 @@ jobs:
           git checkout gh-pages
       - name: really pushing this time
         run: |
-          git status
-      - name: abac
-        run: |
-          git restore --staged .
-          git stash pop
+          ./push_to_page.sh
       - name: git adding
         run: |
           git add wasm/
