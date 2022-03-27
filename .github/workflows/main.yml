@@ -37,8 +37,13 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
           git fetch
+          git status
           git stash
           git checkout gh-pages
+      - name: really pushing this time
+        run: |
+          git status
+          git stash pop
       - name: git adding
         run: |
           git add wasm/
