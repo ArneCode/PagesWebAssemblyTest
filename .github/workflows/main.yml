@@ -38,6 +38,7 @@ jobs:
           git config --local user.name "github-actions"
           git fetch
           git status
+          git add wasm/
           git stash
           git checkout gh-pages
       - name: really pushing this time
@@ -45,7 +46,6 @@ jobs:
           git status
       - name: abac
         run: |
-          git add wasm/
           git stash pop
       - name: git adding
         run: |
