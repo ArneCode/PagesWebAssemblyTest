@@ -1,3 +1,3 @@
-Module.onRuntimeInitialized(()=>{
-    console.log("initialized")
-})
+Module.onRuntimeInitialized=()=>{
+    console.log(Module._next())
+}
