@@ -11,6 +11,4 @@ tasks:
       ./emsdk install latest
       ./emsdk activate latest
       source ./emsdk_env.sh
-      
-
-
+      emcmake cmake -B build/wasm
