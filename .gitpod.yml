@@ -11,4 +11,13 @@ tasks:
       ./emsdk install latest
       ./emsdk activate latest
       source ./emsdk_env.sh
-      emcmake cmake -B build/wasm
+      cd ../..
+      npm install http-server -g
+  - command: |
+      chmod u+x run.sh
+      ./run.sh
+  - name: Static Server
+    command: |
+      cd deploy
+      http-server
+      cd ..
