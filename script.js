@@ -1,1 +1,4 @@
-WebAssembly.instantiateStreaming(fetch("wasm/WASM_TEST.wasm"),{}).then(obj=>console.log(obj.instance.exports))
+Module.onRuntimeInitialized(()=>{
+    console.log(Module.next())
+    console.log(Module)
+})
