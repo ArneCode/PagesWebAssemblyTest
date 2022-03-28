@@ -12,5 +12,7 @@ tasks:
     command: |
       cd deploy
       python3 -m http.server 8080
-      cd ..
-    openMode: split-right
+      cd ../..
+ports:
+  - port: 8080
+    onOpen: open-browser
