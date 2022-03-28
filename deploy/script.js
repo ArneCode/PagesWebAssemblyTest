@@ -1,3 +1,3 @@
 Module.onRuntimeInitialized=()=>{
-    console.log(Module._next())
+    console.log("calling function in wasm: ", Module.mal2(3))
 }
