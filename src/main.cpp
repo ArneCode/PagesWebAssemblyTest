@@ -7,6 +7,6 @@ EMSCRIPTEN_KEEPALIVE int next(){
     return n;
 }
 EMSCRIPTEN_KEEPALIVE char* getMsg(){
-    return "Hello World from emscripten!";
+    return "Hello World from Emscripten!";
 }
 }
