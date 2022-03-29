@@ -2,7 +2,9 @@
 #include <emscripten.h>
 #include <iostream>
 
-
+extern "C"{
+  extern void console_log(std::string text);
+}
 float mal2(float n) { return n * 2; }
 
 EMSCRIPTEN_BINDINGS(my_module) { emscripten::function("mal2", &mal2); }
@@ -14,7 +16,7 @@ public:
   int getAlter() { return alter; }
   void setAlter(int n) { alter = n; }
   void sagHallo() {
-      return;
+      console_log("Hallo");
    }
 };
 EMSCRIPTEN_BINDINGS(my_class_example) {
