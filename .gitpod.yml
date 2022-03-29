@@ -5,6 +5,7 @@ tasks:
       cd emsdk
       git pull
       ./emsdk install latest
+  - command: |
       ./emsdk activate latest
       source ./emsdk_env.sh
       cd ../..
