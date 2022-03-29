@@ -1,7 +1,8 @@
 tasks:
   - init: |
+      cd gitpod
       git clone https://github.com/emscripten-core/emsdk.git
-      cd gitpod/emsdk
+      cd emsdk
       ./emsdk install latest
       ./emsdk activate latest
       source ./emsdk_env.sh
