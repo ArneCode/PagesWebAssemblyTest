@@ -16,7 +16,7 @@ public:
   int getAlter() { return alter; }
   void setAlter(int n) { alter = n; }
   void sagHallo() {
-      console_log("Hallo");
+    std::cout<<"Hallo Welt, ich bin "<<alter<<" Jahre alt\n";
    }
 };
 EMSCRIPTEN_BINDINGS(my_class_example) {
