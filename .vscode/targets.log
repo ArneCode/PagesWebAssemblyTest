@@ -1,0 +1,5 @@
+/workspace/PagesWebAssemblyTest/gitpod/emsdk/upstream/emscripten/emmake all -f /workspace/PagesWebAssemblyTest/build/wasm/Makefile -C /workspace/PagesWebAssemblyTest/build/wasm --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: all -f /workspace/PagesWebAssemblyTest/build/wasm/Makefile -C /workspace/PagesWebAssemblyTest/build/wasm --print-data-base --no-builtin-variables --no-builtin-rules --question
+ 
+emmake: error: 'all -f /workspace/PagesWebAssemblyTest/build/wasm/Makefile -C /workspace/PagesWebAssemblyTest/build/wasm --print-data-base --no-builtin-variables --no-builtin-rules --question' failed: [Errno 2] No such file or directory: 'all'
+ 
