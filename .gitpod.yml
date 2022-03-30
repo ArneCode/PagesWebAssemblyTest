@@ -1,4 +1,5 @@
 tasks:
+  - init: git cone https://github.com/ArneCode/CppTools.git
   - command: |
       cd gitpod
       git clone https://github.com/emscripten-core/emsdk.git
