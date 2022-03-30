@@ -1,3 +1,4 @@
+
 tasks:
   - init: git clone https://github.com/ArneCode/CppTools.git
   - before: |
@@ -16,3 +17,7 @@ tasks:
 ports:
   - port: 8080
     onOpen: open-preview
+
+vscode:
+  extensions:
+    - https://github.com/ArneCode/CppTools/raw/main/vscode-cpptools.vsix
