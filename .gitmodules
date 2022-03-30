@@ -1,0 +1,3 @@
+[submodule "CppTools"]
+	path = CppTools
+	url = https://github.com/ArneCode/CppTools.git
